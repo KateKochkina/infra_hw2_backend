@@ -1,2 +1,2 @@
-#!/bin/bash
-docker run -v $PWD:/app -p 8080:8080 ds-backend
+#!/usr/bin/env bash
+docker build -t ds-backend . && docker run -v .:/app -p 8080:8080 ds-backend
